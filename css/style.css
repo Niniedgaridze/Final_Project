@@ -114,9 +114,51 @@ button{
 .news{
     width: 40%;
     border: 2px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    /* margin: 100px 168px 0 100px; */
 }
-h3{
+h2{
     font-size: 24px;
     color: #202124;
     font-weight: bold;
+    margin: 0 0 39px -250px;
+}
+
+.news-1{
+    width: 70%;
+    /* border: 2px solid pink; */
+    border-top: 2px solid #ebeded;
+    padding-top: 39px;
+
+}
+.line2{
+    width: 382px;
+    height: 2px;
+    background-color: #ebeded;
+    margin: 39px 0 39px;
+}
+h3{
+    color: #fa6980;
+    font-weight: bold;
+}
+h4{
+    color: #202124;
+    font-weight: bold;
+    padding: 20px 0 10px;
+}
+.newsp{
+    color: #a6adb4;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+.time{
+    display: flex;
+    gap: 10px;
+    color: #a6adb4;
+    font-size: 13px;
 }
