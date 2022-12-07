@@ -2,7 +2,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 header{
@@ -27,16 +27,23 @@ header{
 }
 
 
-nav ul{
+/* .headernav{
     display: flex;
     gap: 30px;
     
+} */
+
+.headerul{
+    font-size: 11px;
+    color: #a6adb4;
+    display: flex;
+    gap: 30px;
 }
-ul li{
+/* ul li{
     font-size: 11px;
     color: #a6adb4;
     
-}
+} */
 
 .active{
     color: #343638;
@@ -104,7 +111,7 @@ ul li:hover{
 button{
     width: 20%;
     height: 40px;
-    background-color: #fa6980;
+    /* background-color: #fa6980; */
     font-size: 11px;
     color: #ffffff;
     border-radius: 5px;
@@ -112,9 +119,13 @@ button{
     margin-top: 46px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .news{
     width: 40%;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +187,7 @@ h4{
 
 .section2{
     width: 80%;
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
     margin: 0 auto;
 }
 .section2H{
@@ -194,7 +205,7 @@ h4{
 
 article{
     width: 30%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,20 +235,20 @@ article{
 .section3{
     width: 80%;
     margin: 0 auto;
-    border: 2px solid palevioletred;
+    /* border: 2px solid palevioletred; */
     
 }
 
 .section3cards{
     width: 100%;
     margin: 0 auto;
-    border: 2px solid crimson;
+    /* border: 2px solid crimson; */
     display: flex;
     gap: 20px;
 }
 .left{
     width: 70%;
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -281,7 +292,7 @@ article{
 
 .right{
     width: 30%;
-    border: 2px solid #fa72b8;
+    /* border: 2px solid #fa72b8; */
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -297,6 +308,73 @@ article{
     flex-direction: column;
     justify-content: center;
 }
+.section3H{
+    margin-bottom: 20px;
+}
+
+
+
+                  /* footer styling starts here  */
+
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    margin: 101px auto 0 auto;
+    /* border: 2px solid blueviolet; */
+    background-color: #a6adb4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerlogo{
+    width: 20%;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0 0 75px 145px;
+}
+
+.footerul{
+    font-size: 13px;
+    color: #cbd0d3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.footer2{
+    width: 45%;
+    display: flex;
+    gap: 40px;
+    padding: 0 0 0 60px;
+
+}
+
+
+.footer3 a{
+    color: #ffffff;
+}
+.footer3{
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: inherit;
+    gap: 32px;
+    
+    padding: 0 0 75px 280px;
+}
+
+.footer3 i:hover{
+    cursor: pointer;
+}
+
+
+
+
 
 
 
