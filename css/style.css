@@ -24,7 +24,7 @@ header{
     font-size: 13px;
     color: #fa6980;
     font-weight: bold;
-    animation: logoanimation 1s step-start infinite;
+    animation: logoanimation 1s linear infinite;
     /* animation-name: logoanimation;
     animation-duration: 2s;
     animation-timing-function: linear;
