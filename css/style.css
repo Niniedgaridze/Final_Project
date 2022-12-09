@@ -42,7 +42,9 @@ header{
 }
 
 
-
+li a{
+    color: #a6adb4;
+}
 
 .headerul{
     font-size: 11px;
