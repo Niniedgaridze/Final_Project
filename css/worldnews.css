@@ -106,8 +106,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 55px;
+    justify-content: space-evenly;
+    /* gap: 55px; */
 }
 
 .input{
@@ -189,6 +189,11 @@ button:hover{
     /* border: 2px solid pink; */
 }
 
+.wsection2_inside{
+    width: 56%;
+    display: flex;
+    justify-content: space-between;
+}
 
 .imgdiv{
     width: 60%;
@@ -319,4 +324,41 @@ footer{
 .footer3 a:hover{
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .wsection1{
+        flex-direction: column;
+        
+
+    }
+    .section1_left{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        gap: 30px;
+        padding: 45px 0;
+        /* justify-content: space-between; */
+    }
+    .input{
+        /* padding-top: 55px; */
+    }
+    .wsection2{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .wsection2_inside{
+        width: 100%;
+    }
+
+    .text1{
+        width: 43%;
+    }
+
 }
