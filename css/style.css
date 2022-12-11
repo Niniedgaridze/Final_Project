@@ -61,7 +61,13 @@ li a{
 
 ul li:hover{
     cursor: pointer;
-    border-bottom: 2px solid #fa6980;
+    text-decoration: underline solid 2px #fa6980;
+    /* border-bottom: 2px solid #fa6980; */
+}
+
+li a:hover{
+    cursor: pointer;
+    text-decoration: underline solid 2px #fa6980;
 }
 
 
