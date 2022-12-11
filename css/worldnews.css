@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container{
     max-width: 1440px;
     width: 100%;
@@ -10,9 +17,15 @@ header{
     width: 100%;
     /* border: 2px solid blue; */
     background-color: #f6f8f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px;
     position: fixed;
     top: 0%;
@@ -23,15 +36,24 @@ header{
 
 .logo{
     width: 40%;
-    font-size: 13px;
+    font-size: 0.813rem;
     color: #fa6980;
     font-weight: bold;
-    animation: logoanimation 1s linear infinite;
+    -webkit-animation: logoanimation 1s linear infinite;
+            animation: logoanimation 1s linear infinite;
     /* animation-name: logoanimation;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 3;
     box-shadow: 10px 15px rgb(223, 109, 109); */
+}
+
+@-webkit-keyframes logoanimation{
+    50% {
+        opacity: 0;
+      }
+    
+
 }
 
 @keyframes logoanimation{
@@ -48,8 +70,10 @@ li a{
 }
 
 .headerul{
-    font-size: 11px;
+    font-size: 0.688rem;
     color: #a6adb4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
 }
@@ -62,12 +86,14 @@ li a{
 
 ul li:hover{
     cursor: pointer;
-    text-decoration: underline solid 2px #fa6980;
+    -webkit-text-decoration: underline solid 2px #fa6980;
+            text-decoration: underline solid 2px #fa6980;
 }
 
 li a:hover{
     cursor: pointer;
-    text-decoration: underline solid 2px #fa6980;
+    -webkit-text-decoration: underline solid 2px #fa6980;
+            text-decoration: underline solid 2px #fa6980;
 }
 
 
@@ -80,6 +106,8 @@ li a:hover{
 .wsection1{
     width: 85%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 53px auto 0 auto;
     /* border: 2px solid salmon; */
@@ -93,13 +121,19 @@ li a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .worldnews{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #ffffff;
     font-weight: bold;
 }
@@ -108,18 +142,32 @@ li a:hover{
 
 form{
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     /* gap: 55px; */
 }
 
 .input{
     width: 70%;
     /* height: 80px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 10px;
 }
 
@@ -139,7 +187,7 @@ input[type=datetime]{
 
 label{
     color: #202124;
-    font-size: 13px;
+    font-size: 0.813rem;
     font-weight: bolder;
 }
 
@@ -148,10 +196,12 @@ label{
     width: 20%;
     height: 40px;
     background-color: #fa6980;
-    font-size: 11px;
+    font-size: 0.688rem;
     color: #ffffff;
     border-radius: 5px;
     border: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -174,8 +224,12 @@ button:hover{
 .wsection2{
     width: 85%;
     margin: 36px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: rgba(0,0,0,0);
     padding: 28px 0;
     border-top: 2px solid #ebeded;
@@ -185,19 +239,30 @@ button:hover{
 
 .text1{
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
     /* align-items: center; */
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     
     /* border: 2px solid pink; */
 }
 
 .wsection2_inside{
     width: 56%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .imgdiv{
@@ -212,14 +277,15 @@ button:hover{
 }
 
 .lorem1{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #202124;
     font-weight: bolder;
 }
 
 .lorem2{
     color: #a6adb4;
-    font-size: 14px;
+    font-family: 'Roboto';
+    font-size: 0.875rem;
 }
 
 
@@ -230,8 +296,13 @@ button:hover{
 .section3{
     width: 85%;
     margin: 36px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 80px;
     /* justify-content: space-between; */
     background-color: rgba(0,0,0,0);
@@ -279,32 +350,44 @@ footer{
     margin: 101px auto 0 auto;
     /* border: 2px solid blueviolet; */
     background-color: #a6adb4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
     padding: 20px 0 20px 0;
 }
 
 .footer1{
     /* width: 20%; */
-    font-size: 13px;
+    font-size: 0.813rem;
     color: #ffffff;
     font-weight: bold;
     /* padding: 0 0 75px 145px; */
 }
 
 .footerul{
-    font-size: 13px;
+    font-size: 0.813rem;
     color: #cbd0d3;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 12px;
 }
 
 
 .footer2{
     /* width: 45%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
     /* padding: 0 0 0 60px; */
@@ -314,10 +397,14 @@ footer{
 
 .footer3 a{
     color: #ffffff;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 .footer3{
     /* width: 40%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* flex-wrap: nowrap; */
     /* flex-direction: inherit; */
@@ -338,7 +425,10 @@ footer{
 
 @media screen and (max-width: 768px){
     .wsection1{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         
 
     }
@@ -355,7 +445,10 @@ footer{
         /* padding-top: 55px; */
     }
     .wsection2{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 25px;
     }
     .wsection2_inside{
@@ -375,7 +468,10 @@ footer{
         color: #a6adb4;
     }
     .wsection2_inside{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 35px;
     }
 
