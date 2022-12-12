@@ -460,7 +460,7 @@ article{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* gap: 48px; */
+    
 }
 
 .elephant{
@@ -469,9 +469,7 @@ article{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    
 }
 .section3H{
     margin-bottom: 20px;
@@ -489,7 +487,7 @@ article{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /* align-items: center; */
+   
 }
 
 
